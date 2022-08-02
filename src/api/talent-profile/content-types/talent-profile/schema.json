@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "talent_profiles",
+  "info": {
+    "singularName": "talent-profile",
+    "pluralName": "talent-profiles",
+    "displayName": "talentProfile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "linkedIn": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    },
+    "portofolio": {
+      "type": "text"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

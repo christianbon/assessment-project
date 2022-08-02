@@ -1,0 +1,30 @@
+{
+    "kind": "collectionType",
+    "collectionName": "client_profiles",
+    "info": {
+        "singularName": "client-profile",
+        "pluralName": "client-profiles",
+        "displayName": "clientProfile",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "companyName": {
+            "type": "string"
+        },
+        "companyWebsite": {
+            "type": "string"
+        },
+        "phoneNumber": {
+            "type": "string"
+        },
+        "users_permissions_user": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "plugin::users-permissions.user"
+        }
+    }
+}
