@@ -31,6 +31,54 @@
             "type": "relation",
             "relation": "oneToOne",
             "target": "plugin::users-permissions.user"
+        },
+        "assessmentScore": {
+            "type": "integer"
+        },
+        "assessmentReport": {
+            "type": "text"
+        },
+        "yearsOfExperience": {
+            "type": "decimal"
+        },
+        "currentPosition": {
+            "type": "string"
+        },
+        "experienceDescription": {
+            "type": "richtext"
+        },
+        "latestEducation": {
+            "type": "string"
+        },
+        "certification": {
+            "type": "string"
+        },
+        "expectedSalary": {
+            "type": "biginteger"
+        },
+        "preferredWorkLocation": {
+            "type": "string"
+        },
+        "preferredSpecialization": {
+            "type": "string"
+        },
+        "gender": {
+            "type": "string"
+        },
+        "age": {
+            "type": "integer"
+        },
+        "currentLocation": {
+            "type": "string"
+        },
+        "hackerrankScore": {
+            "type": "integer"
+        },
+        "programming_languages": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::programming-language.programming-language",
+            "mappedBy": "talent_profile"
         }
     }
 }

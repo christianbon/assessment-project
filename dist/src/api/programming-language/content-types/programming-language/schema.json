@@ -1,0 +1,25 @@
+{
+    "kind": "collectionType",
+    "collectionName": "programming_languages",
+    "info": {
+        "singularName": "programming-language",
+        "pluralName": "programming-languages",
+        "displayName": "programmingLanguage",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "talent_profile": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::talent-profile.talent-profile",
+            "inversedBy": "programming_languages"
+        }
+    }
+}
